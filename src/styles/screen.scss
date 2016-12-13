@@ -2,83 +2,13 @@
 
 $base-text-size: 16px;
 $base-font-family: sans-serif;
-//this scss only has the overall div (body)/html writing
+
 html {
   text-size-adjust: 100%;
 }
 
-div {
+body {
   @include font-smoothing(on);
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 2em;
 }
-
-  figure {
-    width: 10em;
-    height: 10em;
-    background-color: red;
-  }
-
-  ul {
-    list-style: none;
-    padding-right: 2em;
-  }
-
-// html {
-//   text-size-adjust: 100%;
-// }
-//
-// body {
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   margin: 0;
-//   font: 16px / 1 sans-serif;
-//   background-color: mintcream;
-// }
-//
-// .colorsquare{
-//
-//   background-color: hsla(130, 50%, 50%, .5);
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 2em;
-//   padding-top: 10px;
-// }
-//
-// h3 {
-//   font-family: 'Muli';
-//   color: deeppink;
-//   padding-top: 3em;
-// }
-//
-// section {
-//   background-image: url('http://il7.picdn.net/shutterstock/videos/37491/thumb/1.jpg');
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 2em;
-// }
-//
-// h1 {
-// font-family: 'Open Sans';
-// color: lightseagreen;
-// text-align: center;
-// padding-top: 2em;
-// }
-//
-// .scale {
-//   display: flex;
-//   justify-content: center;
-// }
-//
-// form p{
-//   text-align: center;
-//   padding-top: 4em;
-//   font-family: 'Muli';
-// }
-//
