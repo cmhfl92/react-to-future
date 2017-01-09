@@ -12,7 +12,7 @@ html {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  background-color: hsla(360, 100%, 1%, 0.89);
+  background-color: hsla(360, 100%, 100%, 1);
 }
 
 h1 {
@@ -20,15 +20,15 @@ h1 {
   font-size: 25px;
   text-align: center;
   padding-top: 5em;
-  color: #fff;
+  color: black;
 }
 
 div.box {
   padding-top: 2em;
   width: 150px;
   height: 120px;
-  border: solid #fff 4px;
-  border-radius: 50%;
+  border: 6px solid black;
+  border-top-right-radius: 100%;
 }
 
 figure {
@@ -39,7 +39,7 @@ figure {
 p {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 ul {
@@ -47,4 +47,6 @@ ul {
   list-style: none;
   padding-right: 2em;
   text-align: center;
+  color: black;
+  font-weight: bold;
 }
