@@ -12,21 +12,23 @@ html {
   align-items: center;
   flex-direction: column;
   margin: 0;
+  background-color: hsla(360, 100%, 1%, 0.89);
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   text-align: center;
+  padding-top: 5em;
+  color: #fff;
 }
 
 div.box {
   padding-top: 2em;
   width: 150px;
   height: 120px;
-  border: solid black 4px;
+  border: solid #fff 4px;
   border-radius: 50%;
-
 }
 
 figure {
@@ -34,7 +36,15 @@ figure {
   height: 160px;
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
 ul {
+  font-family: 'Raleway', sans-serif;
   list-style: none;
   padding-right: 2em;
+  text-align: center;
 }
