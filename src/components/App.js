@@ -43,7 +43,7 @@ class App extends Component {
       <h1>HSLA Color Picker</h1>
       <section>
         <figure>
-          <div style={{ backgroundColor: hsla }} />
+          <div className='box' style={{ backgroundColor: hsla }} />
         </figure>
         <p>{hsla}</p>
         <form>

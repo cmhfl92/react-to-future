@@ -4,27 +4,37 @@ $base-text-size: 16px;
 $base-font-family: sans-serif;
 //this scss only has the overall div (body)/html writing
 html {
-  text-size-adjust: 100%;
-}
-
-div {
   @include font-smoothing(on);
-  margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  text-size-adjust: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2em;
+  margin: 0;
 }
 
-  figure {
-    width: 10em;
-    height: 10em;
-    background-color: red;
-  }
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
 
-  ul {
-    list-style: none;
-    padding-right: 2em;
-  }
+div.box {
+  padding-top: 2em;
+  width: 150px;
+  height: 120px;
+  border: solid black 4px;
+  border-radius: 50%;
+
+}
+
+figure {
+  width: 90px;
+  height: 160px;
+}
+
+ul {
+  list-style: none;
+  padding-right: 2em;
+}
