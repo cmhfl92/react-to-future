@@ -19,20 +19,41 @@ class App extends Component {
     })
   }
 
+  updateSaturation (saturation) {
+    this.setState({
+      saturation: saturation
+    })
+  }
+
+  updateLightness (lightness) {
+    this.setState({
+      lightness: lightness
+    })
+  }
+
+  updateAlpha (alpha) {
+    this.setState({
+      alpha: alpha
+    })
+  }
+
   render () {
+    const hsla = `hsla(${this.state.hue}, ${this.state.saturation}%, ${this.state.lightness}%, ${this.state.alpha})`
     return <div>
       <h1>HSLA Color Picker</h1>
-      <figure>
-        <div />
-      </figure>
-      <ul>
-        <li>H <input className='hue' name='hue' type='range' min='0' max='360' /> </li>
-        <li>S <input className='sat' name='sat' type='range' min='0' max='100' /> </li>
-        <li>L <input className='light' name='light' type='range' min='0' max='100' /> </li>
-        <li>A <input className='alpha' name='alpha' type='range' min='0.00' max='1.00' step='.01' /> </li>
-      </ul>
       <section>
-        <h3>hsla(130, 50%, 50%, .5)</h3>
+        <figure>
+          <div style={{ backgroundColor: hsla }} />
+        </figure>
+        <p>{hsla}</p>
+        <form>
+          <ul>
+            <li><p>Hue</p><input value={this.state.hue} name='hue' type='range' min='0' max='360' onInput={(event) => { this.updateHue(event.target.value) }} /> </li>
+            <li><p>Saturation</p><input value={this.state.saturation} name='saturation' type='range' min='0' max='100' onInput={(event) => { this.updateSaturation(event.target.value) }} /> </li>
+            <li><p>Lightness</p><input value={this.state.lightness} name='lightness' type='range' min='0' max='100' onInput={(event) => { this.updateLightness(event.target.value) }} /> </li>
+            <li><p>Alpha</p><input value={this.state.alpha} name='alpha' type='range' min='0.00' max='1.00' step='.01' onInput={(event) => { this.updateAlpha(event.target.value) }} /> </li>
+          </ul>
+        </form>
       </section>
     </div>
   }

@@ -2,6 +2,12 @@ import React, { Component } from 'react'
 
 class Slider extends Component {
 
+  // handleChange (click) {
+  //   this.setState({
+  //     handleChange: click
+  //   })
+  // }
+
   render () {
     return <input
       className={styles.root}
